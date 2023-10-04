@@ -5,4 +5,7 @@ export interface Item{
     price: number
     qtd: number
     categories: string[]
+
+
+    img: string
 }

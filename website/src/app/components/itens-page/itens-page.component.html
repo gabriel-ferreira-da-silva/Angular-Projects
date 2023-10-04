@@ -1,6 +1,11 @@
 <p>itens-page works!</p>
 <li *ngFor = "let item of itens">
-    <div>
-        <p>{{item.name}}</p>
+    <div class = "itemButton">
+        <img class= "img-button" src={{item.img}} alt="">
+        <div class="name-price">
+            <p class="name-display"> {{item.name}} </p>
+            <p class="price-display"> R${{item.price}} </p>    
+        </div>
+        <p class="description-display"> {{item.description}} </p>
     </div>
 </li>

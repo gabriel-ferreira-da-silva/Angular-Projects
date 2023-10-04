@@ -1,0 +1,63 @@
+*{
+    font-family: sans-serif;
+    margin: 3%;
+}
+
+
+
+.itemButton{
+    height: 200px;
+    width: 150px;
+
+
+    border-radius: 3%;
+    background-color: blanchedalmond;
+
+    margin:10%;
+    transition: 0.3s;
+
+}
+
+.itemButton:Hover{
+    translate: 0px -10px;
+}
+
+.itemButton:Target{
+    translate: 0px -20px;
+}
+
+*{
+    vertical-align: left;
+}
+.name-price{
+    /*display: grid; 
+    grid-template-columns: 1fr 1fr;
+    */
+
+}
+
+.name-display{
+
+}
+
+.price-display{
+
+}
+
+.img-button{
+    height: 50%;
+    width: 90%;
+
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+
+.description-display{
+    height: 40%;
+    width:90%;
+    font-size:smaller;
+
+    text-align: justify;
+
+}

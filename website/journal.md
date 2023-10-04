@@ -66,13 +66,11 @@ npm run itensServer
 
 
 
+# #3
 
+eu sempre esqueço como css funciona
 
-
-
-
-
-
+![](https://i.stack.imgur.com/4IT0d.png)
 
 
 
