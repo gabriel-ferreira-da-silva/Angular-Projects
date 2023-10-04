@@ -1,0 +1,7 @@
+{
+    "itens":[
+        {"id": 1 , "name": "one", "price": 1, "description":"one","qtd":1, "categories":"[one]"},
+        {"id": 2 , "name": "one", "price": 1, "description":"one","qtd":1, "categories":"[one]"},
+        {"id": 3 , "name": "one", "price": 1, "description":"one","qtd":1, "categories":"[one]"}
+    ]
+}

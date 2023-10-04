@@ -48,34 +48,22 @@ router-outlet is the  component set by router link
 
 
 
+# #2
 
+para criar o banco de dados com json eu rodei
 
+```shell
+npm i json-server
+```
 
+criei um arquivo chamado itens.json e adicionei a linha
 
+```json
+"itensServer": "json-server --watch itens.json --port 3100"
+```
 
+no arquivo package.json
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```shell
+npm run itensServer
+```
