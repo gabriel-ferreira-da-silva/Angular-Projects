@@ -13,4 +13,9 @@ export class ItensServiceService {
   getAll(): Observable<Item[]>{
     return this.http.get<Item[]>(this.apiUrl)
   }
+
+  getItem(id: number): Observable<Item>{
+    const target = "/" + id;
+    return this.http.get<Item>(this.apiUrl + "/" + id)
+  }
 }
