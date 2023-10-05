@@ -18,4 +18,8 @@ export class ItensServiceService {
     const target = "/" + id;
     return this.http.get<Item>(this.apiUrl + "/" + id)
   }
+
+  addItem(item: Item): Observable<Item>{
+    return this.http.post<any>(this.apiUrl, item);
+  }
 }

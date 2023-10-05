@@ -2,11 +2,11 @@ export interface Item{
     // atributos obrigatórios
     id: number
     name: string
-    description: string
-    price: number
-    qtd: number
+    description: string| null
+    price: number| null
+    qtd: number| null
     categories: string[]
-    img: string
+    img: string | null
 
     // atributos descritores
     vendor: string | null
