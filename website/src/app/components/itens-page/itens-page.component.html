@@ -1,5 +1,4 @@
-<p>itens-page works!</p>
-<li *ngFor = "let item of itens">
+<li *ngFor = "let item of itens" class = "itemList">
     <div class = "itemButton" routerLink="/itens-page/{{item.id}}">
         <img class= "img-button" src={{item.img}} alt="">
         <div class="name-price">

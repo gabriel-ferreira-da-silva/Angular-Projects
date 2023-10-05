@@ -4,22 +4,26 @@
 }
 
 
-
+.itemList{
+    display: inline-flex;
+}
 .itemButton{
     height: 200px;
     width: 150px;
 
 
     border-radius: 3%;
-    background-color: blanchedalmond;
+    background-color: rgb(250,250,50);
 
-    margin:10%;
+    margin:10px;
     transition: 0.3s;
 
 }
 
 .itemButton:Hover{
     translate: 0px -10px;
+    border-style: outset;
+    border-color: rgb(100,100,50);
 }
 
 .itemButton:Target{

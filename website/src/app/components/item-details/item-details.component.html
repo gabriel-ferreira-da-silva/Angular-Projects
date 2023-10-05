@@ -1,5 +1,17 @@
 <div *ngIf="item">
-    <img src ={{item.img}}>
-    <p> {{item.longDescription}}</p>
+    <div class="itemPanel">
+        <img src={{item.img}} class="item-image">
+        <div class="item-info">
+            <div>name: {{item.name}}</div>
+            <div>price: {{item.price}}</div>
+            <div>vendor: {{item.vendor}}</div>
+            <div>description: {{item.longDescription}}</div>
+            <div>inStock: {{item.qtd}}</div>
+        </div>
+        <button class="edit-button"> edit </button>
+        <button class="exclude-button"> exclude </button>
+    </div>
 </div>
+
+<app-itens-page></app-itens-page>
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Item } from 'src/app/interfaces/Item';
 import { ItensServiceService } from 'src/app/services/itens-service.service';
+import { ItensPageComponent } from '../itens-page/itens-page.component';
 @Component({
   selector: 'app-item-details',
   templateUrl: './item-details.component.html',
