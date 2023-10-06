@@ -22,4 +22,8 @@ export class ItensServiceService {
   addItem(item: Item): Observable<Item>{
     return this.http.post<any>(this.apiUrl, item);
   }
+
+  remove(item: Item): Observable<Item>{
+    return this.http.delete<any>(this.apiUrl + "/" + item.id);
+  }
 }

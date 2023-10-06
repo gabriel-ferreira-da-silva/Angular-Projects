@@ -18,4 +18,7 @@ export class ItemDetailsComponent {
     const id  = Number(this.route.snapshot.paramMap.get("id"));
     this.ItensService.getItem(id).subscribe((item)=> this.item = item);
   }
+  removeItem(item: Item){
+    this.ItensService.remove(item).subscribe();
+  }
 }

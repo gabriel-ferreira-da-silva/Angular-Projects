@@ -23,6 +23,11 @@
     margin-right: auto;
 }
 
+.baseButton:active{
+    color: red;
+    border-color: red;
+}
+
 .edit-button{
     grid-area: editButton;
 }
