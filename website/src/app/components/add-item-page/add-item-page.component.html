@@ -3,24 +3,30 @@
     <div class="itemForm">
         <label>Name*:</label>
         <input [(ngModel)]="itemName" name = "itemName" placeholder="item name"/>
+        
+        <label>Description*:</label>
+        <input [(ngModel)]="itemDescription" name = "itemDescription" placeholder="item name"/>
 
         <label>Price*:</label>
         <input [(ngModel)]="itemPrice" name = "itemPrice" placeholder="item name"/>
 
-        <label>Description*:</label>
-        <input [(ngModel)]="itemDescription" name = "itemDescription" placeholder="item name"/>
-
         <label>Quantity*:</label>
         <input [(ngModel)]="itemQtd" name = "itemQtd" placeholder="item name"/>
 
-        <label>Long Description*:</label>
-        <input [(ngModel)]="itemLongDescription" name = "itemLongDescription" placeholder="item name"/>
-
+        <label>Categories:</label>
+        <input [(ngModel)]="itemCategories" name = "itemCategories" placeholder="item name"/>
+        
         <label>Image*:</label>
         <input [(ngModel)]="itemImg" name = "itemImg" placeholder="item name"/>
 
-        <button (click)="addItem()"> Add</button>
-    </div>
+        <label>Vendor*:</label>
+        <input [(ngModel)]="itemVendor" name = "itemVendor"/>
+
+        <label>Long Description*:</label>
+        <input [(ngModel)]="itemLongDescription" name = "itemLongDescription" placeholder="item name"/>
+        
+        <button class = "baseButton" (click)="addItem()"> Add</button>
+    </div> 
     
     
 </div>

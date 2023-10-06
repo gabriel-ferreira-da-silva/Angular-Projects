@@ -9,13 +9,16 @@ import { ItensServiceService } from 'src/app/services/itens-service.service';
   styleUrls: ['./add-item-page.component.css']
 })
 export class AddItemPageComponent {
-  itemImg: string= "";
+  
   itemName: string="";
   itemDescription: string = "";
-  itemQtd: number = 0;
   itemPrice: number = 0;
+  itemQtd: number = 0;
+  itemCategories: string="";
+  itemImg: string= "";
+  itemVendor: string="";
   itemLongDescription: string = "";
-
+  
   constructor(private itensService: ItensServiceService){
   }
   item: Item ={
@@ -36,7 +39,12 @@ export class AddItemPageComponent {
   addItem(){
     this.item.id = this.itemPrice * this.itemPrice;
     this.item.name= this.itemName;
+    this.item.description = this.itemDescription;
+    this.item.price = this.itemPrice;
+    this.item.qtd = this.itemQtd;
+    this.item.categories = this.itemCategories.split(' ');
     this.item.img = this.itemImg;
+    this.item.longDescription = this.itemLongDescription;
 
     this.itensService.addItem(this.item).subscribe();
   }

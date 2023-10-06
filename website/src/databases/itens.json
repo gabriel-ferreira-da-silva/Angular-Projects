@@ -76,6 +76,76 @@
       "vendor": "string | null",
       "longDescription": "string | null",
       "review": 0
+    },
+    {
+      "id": 49284,
+      "name": "teste",
+      "description": "string| null",
+      "price": 0,
+      "qtd": 0,
+      "categories": [],
+      "img": "https://static.vecteezy.com/ti/fotos-gratis/t2/22653879-fantasia-ilha-com-cachoeiras-3d-ilustracao-elementos-do-isto-imagem-mobiliado-de-nasa-generativo-ai-gratis-foto.jpg",
+      "vendor": "string | null",
+      "longDescription": "string | null",
+      "review": 0
+    },
+    {
+      "id": 152.102889,
+      "name": "bola bolão",
+      "description": "bola para jogos",
+      "price": "12.333",
+      "qtd": "33",
+      "categories": [
+        "esportes",
+        "entretenimento",
+        "jogos"
+      ],
+      "img": "https://a-static.mlcdn.com.br/450x450/bola-de-futebol-bolineas/bolineasdegude/ff52a71efd6a11ec98194201ac185079/df2a77dc5ecfb8ffe60357170dc3cabe.jpg",
+      "vendor": "string | null",
+      "longDescription": "uma bola de futebol como qualquer outra. Nada muinto especial apenas uma bola de futebol e é isto. è rodando, de plastico ou qualquer outra coisa sei la",
+      "review": 0
+    },
+    {
+      "id": 11111108888891,
+      "name": "",
+      "description": "",
+      "price": 0,
+      "qtd": 0,
+      "categories": [
+        ""
+      ],
+      "img": "",
+      "vendor": "string | null",
+      "longDescription": "",
+      "review": 0
+    },
+    {
+      "id": 11111108888892,
+      "name": "",
+      "description": "",
+      "price": 0,
+      "qtd": 0,
+      "categories": [
+        ""
+      ],
+      "img": "",
+      "vendor": "string | null",
+      "longDescription": "",
+      "review": 0
+    },
+    {
+      "id": 11111108888893,
+      "name": "",
+      "description": "",
+      "price": 0,
+      "qtd": 0,
+      "categories": [
+        ""
+      ],
+      "img": "",
+      "vendor": "string | null",
+      "longDescription": "",
+      "review": 0
     }
   ]
 }

@@ -4,11 +4,48 @@
 
 .main-header{
     font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, rgb(242, 244, 123) 35%, rgb(255, 234, 0) 100%);
+    border-radius:3px;
+    border: solid;
+    border-color: white;
+
 }
 
+.main-header > *{
+    background: none;
+}
+.baseButton{
+    margin-left: 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-style: normal;
+    color: black;
+    align-content: center;
+    background-color: white;
+    
+
+}
+
+.footnote{
+    font-size: 10px;
+    text-align: center;
+    background: none;
+}
+
+.main-header > h1{
+    margin: 3%;
+}
+
+nav {
+    background: none;
+}
 .navbar{
     display: inline-block;
+    margin: 3%;
+    background: none;
 }
+
+
 
 .navbar > a{
     padding-right: 15px;
