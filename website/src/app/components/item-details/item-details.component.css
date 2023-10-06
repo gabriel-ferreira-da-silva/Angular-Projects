@@ -34,3 +34,24 @@
 .exclude-button{
     grid-area: excludeButton;
 }
+
+#add-item-panel{
+    display:inline-block;
+    align-content: center;
+}
+
+.itemForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    align-content: center;
+}
+
+.baseButton{
+    margin-top: 5%;
+}

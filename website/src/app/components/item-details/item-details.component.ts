@@ -9,9 +9,24 @@ import { ItensPageComponent } from '../itens-page/itens-page.component';
   styleUrls: ['./item-details.component.css']
 })
 export class ItemDetailsComponent {
+
+  itemName: string="";
+  itemDescription: string = "";
+  itemPrice: number = 0;
+  itemQtd: number = 0;
+  itemCategories: string="";
+  itemImg: string= "";
+  itemVendor: string="";
+  itemLongDescription: string = "";
+
   item?: Item;
+  editing: boolean = false;
   constructor(private ItensService: ItensServiceService, private route: ActivatedRoute){
     this.getItem();
+  }
+
+  editItem(){
+    this.editing = !this.editing;
   }
 
   getItem(){
@@ -20,5 +35,8 @@ export class ItemDetailsComponent {
   }
   removeItem(item: Item){
     this.ItensService.remove(item).subscribe();
+  }
+  submitEdit(item: Item){
+    this.ItensService.putItem(item).subscribe();
   }
 }

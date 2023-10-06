@@ -1,24 +1,6 @@
 {
   "itens": [
     {
-      "id": 1089,
-      "name": "teste",
-      "description": "teste",
-      "price": "33",
-      "qtd": "33",
-      "categories": [
-        "teste",
-        "teste",
-        "teste",
-        "teste",
-        "teste"
-      ],
-      "img": "teste",
-      "vendor": "string | null",
-      "longDescription": "teste ",
-      "review": 0
-    },
-    {
       "id": 1091,
       "name": "teste",
       "description": "teste",
@@ -70,7 +52,7 @@
       "categories": [
         "teste"
       ],
-      "img": "teste",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxaLo41DVakt-xR_SckaYvH_YNUWVR6S6yTOqV_dt&s",
       "vendor": "string | null",
       "longDescription": "teste",
       "review": 0

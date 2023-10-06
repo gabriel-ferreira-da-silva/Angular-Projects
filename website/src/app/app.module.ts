@@ -10,6 +10,7 @@ import { PresentationComponent } from './components/presentation/presentation.co
 import { ItensPageComponent } from './components/itens-page/itens-page.component';
 import { ItemDetailsComponent } from './components/item-details/item-details.component';
 import { AddItemPageComponent } from './components/add-item-page/add-item-page.component';
+import { EditPageComponent } from './components/edit-page/edit-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AddItemPageComponent } from './components/add-item-page/add-item-page.c
     PresentationComponent,
     ItensPageComponent,
     ItemDetailsComponent,
-    AddItemPageComponent
+    AddItemPageComponent,
+    EditPageComponent
   ],
   imports: [
     BrowserModule,

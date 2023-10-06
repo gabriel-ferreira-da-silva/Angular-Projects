@@ -8,10 +8,44 @@
             <div>description: {{item.longDescription}}</div>
             <div>inStock: {{item.qtd}}</div>
         </div>
-        <button class="baseButton"> edit </button>
+        <button class="baseButton" (click)="editItem()"> edit </button>
         <button class="baseButton" (click)="removeItem(item)"> exclude </button>
     </div>
 </div>
 
-<app-itens-page></app-itens-page>
+<div id="add-item-panel" *ngIf="item&&editing">
+    <img src={{item.name}}>
+    <div class="itemForm">
+        <label>Name*:</label>
+        <input [(ngModel)]="item.name" name = "itemName" placeholder={{item.name}}/>
+        
+        <label>Description*:</label>
+        <input [(ngModel)]="item.description" name = "itemDescription"/>
+
+        <label>Price*:</label>
+        <input [(ngModel)]="item.price" name = "itemPrice" />
+
+        <label>Quantity*:</label>
+        <input [(ngModel)]="item.qtd" name = "itemQtd" placeholder="item name"/>
+
+        <label>Categories:</label>
+        <input [(ngModel)]="item.categories" name = "itemCategories" placeholder="item name"/>
+        
+        <label>Image*:</label>
+        <input [(ngModel)]="item.img" name = "itemImg" placeholder="item name"/>
+
+        <label>Vendor*:</label>
+        <input [(ngModel)]="item.vendor" name = "itemVendor"/>
+
+        <label>Long Description*:</label>
+        <input [(ngModel)]="item.longDescription" name = "itemLongDescription" placeholder="item name"/>
+
+        <button class="baseButton" (click)="submitEdit(item)"> Submit</button>
+        <button class="baseButton" (click)="editItem()"> cancel </button>
+        
+    </div> 
+    
+</div>
+
+
 

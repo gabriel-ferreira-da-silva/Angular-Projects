@@ -23,6 +23,10 @@ export class ItensServiceService {
     return this.http.post<any>(this.apiUrl, item);
   }
 
+  putItem(item: Item): Observable<Item>{
+    return this.http.put<any>(this.apiUrl+"/"+item.id , item);
+  }
+
   remove(item: Item): Observable<Item>{
     return this.http.delete<any>(this.apiUrl + "/" + item.id);
   }
