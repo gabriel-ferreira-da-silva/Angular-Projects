@@ -5,6 +5,7 @@
 #add-item-panel{
     display:inline-block;
     align-content: center;
+    margin-left:5%;
 }
 
 .itemForm{

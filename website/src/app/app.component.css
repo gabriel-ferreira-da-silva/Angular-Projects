@@ -8,6 +8,10 @@
     border-radius:3px;
     border: solid;
     border-color: white;
+    width:100%;
+    margin: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
 
 }
 
@@ -54,4 +58,12 @@ nav {
 
 .navbar > a{
     padding-right: 15px;
+}
+
+.body-page{
+    background-color: white;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 5%;
 }
