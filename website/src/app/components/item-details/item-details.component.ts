@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 import { Item } from 'src/app/interfaces/Item';
 import { ItensServiceService } from 'src/app/services/itens-service.service';
 import { ItensPageComponent } from '../itens-page/itens-page.component';
@@ -21,7 +21,7 @@ export class ItemDetailsComponent {
 
   item?: Item;
   editing: boolean = false;
-  constructor(private ItensService: ItensServiceService, private route: ActivatedRoute){
+  constructor(private ItensService: ItensServiceService, private route: ActivatedRoute, private router: Router){
     this.getItem();
   }
 
@@ -35,8 +35,10 @@ export class ItemDetailsComponent {
   }
   removeItem(item: Item){
     this.ItensService.remove(item).subscribe();
+    this.router.navigate(['/itens-page']);
   }
   submitEdit(item: Item){
     this.ItensService.putItem(item).subscribe();
+    this.editing = false;
   }
 }

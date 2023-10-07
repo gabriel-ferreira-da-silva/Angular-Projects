@@ -20,10 +20,15 @@
     vertical-align: middle;
     font-style: normal;
     color: black;
-    align-content: center;
-    background-color: white;
-    
+    border-color: yellow;
+}
+.baseButton:Hover{
+    background-color: yellow;
+    border-color: white;
+}
 
+.baseButton:Active{
+    background-color: white;
 }
 
 .footnote{
