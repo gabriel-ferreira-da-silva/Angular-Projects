@@ -1,17 +1,20 @@
 
 <div class="container">
   <h1>to-do app</h1>
-  <form>
-    <div class="form-group">
+  <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
+    <div class="form-group form-group-dark">
       <label for="exampleInputEmail1">Task</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-danger">required fiekd</small>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ngModel name="task" 
+      required>
+      <small *ngIf = "taskForm.invalid" id="emailHelp" class="form-text text-danger">required field</small>
     </div>
     
-    <button id="submitButton" class="btn btn-primary">Submit</button>
+    <button 
+    [disabled]="taskForm.invalid"
+    id="submitButton" class="btn btn-primary">Submit</button>
   </form>
   <hr>
-  <table class="table table-striped table-dark">
+  <table class="table ">
     <thead>
       <tr>
         <th scope="col">Task</th>
@@ -20,10 +23,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Mark</td>
-        <td> <input type ="checkbox" id="myCheckBox"> </td>
-        <td><button class="btn btn-danger btn-sm">delete</button></td>
+      <tr *ngFor="let t of taskArray; index as i">
+        <td>{{t.taskName}}</td>
+        <td> <input (change)="onCheck()" type ="checkbox" id="myCheckBox"> </td>
+        <td><button class="btn btn-danger btn-sm" (click)="onDelete(i)">delete</button></td>
       </tr>
       
     </tbody>
