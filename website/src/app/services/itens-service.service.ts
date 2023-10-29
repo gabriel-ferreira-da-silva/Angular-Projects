@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ItensServiceService {
-  private apiUrl = "http://localhost:3100/itens";
+  private apiUrl = "http://192.168.1.108:3100/itens";
 
   constructor(private http: HttpClient) { }
 

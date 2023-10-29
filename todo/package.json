@@ -1,13 +1,12 @@
 {
-  "name": "website",
+  "name": "todo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "itensServer": "json-server --watch src/databases/itens.json  --host 192.168.1.108 --port 3100"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +18,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "json-server": "^0.17.4",
+    "bootstrap": "^5.3.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
